@@ -9,7 +9,7 @@ describe("Assertions Demo", () => {
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     );
-    cy.wait(500);
+   // cy.wait(500);
     cy.url().should("not.include", "Pakistan");
     cy.url().should("include", "orangehrmlive.com");
     cy.url().should("eq","https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" );
